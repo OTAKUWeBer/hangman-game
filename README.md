@@ -25,7 +25,7 @@ cd hangman-game
 If you're using Python, make sure you have Python installed on your system. You can run the game with the following command:
 
 ```bash
-python hangman.py
+python main.py
 ```
 
 ## Usage
