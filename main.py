@@ -1,7 +1,16 @@
-import random
-from words import words  # Make sure words is a list of strings
-import string
+from words import words
 from hang_man_visual import lives_visual_dict
+import random
+import string
+import os
+import subprocess
+
+def clear_screen():
+    if os.name == 'nt':  # For Windows
+        subprocess.run(['cls'], shell=True)
+    else:  # For Unix/Linux/Mac
+        subprocess.run(['clear'])
+clear_screen()
 
 def get_valid_word(words):
     word = random.choice(words)
@@ -29,6 +38,7 @@ def hangman():
         
         # Getting user input
         user_input = input("Guess a letter (or multiple letters): ").upper()
+        clear_screen()
         
         for user_letter in user_input:
             if user_letter in alphabet - used_letters:
