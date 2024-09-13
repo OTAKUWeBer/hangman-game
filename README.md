@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a simple Hangman game implemented in [Python/JavaScript/etc.]. The game involves guessing letters to reveal a hidden word before running out of attempts.
+This is a simple Hangman game implemented in Python. The game involves guessing letters to reveal a hidden word before running out of attempts.
 
 ## Features
 
